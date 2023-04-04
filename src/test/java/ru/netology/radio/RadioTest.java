@@ -93,6 +93,20 @@ class RadioTest {
 
     @Test
 
+    public void volumeTest4() {
+
+        Radio radio = new Radio();
+
+        radio.setCurrentVolume(11);
+
+        int actual = radio.getCurrentVolume();
+        int expected = 0;
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
     public void nextStation() {
 
         Radio radio = new Radio();
